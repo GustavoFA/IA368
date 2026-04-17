@@ -1,5 +1,9 @@
 # IA368 - Advanced Deep Learning: LLMs and Intelligent Agents in Practice 
 
+Professor: Profa. Dr. Roberto de Alencar Lotufo
+Semester: 2nd Semester 2025
+Institution: FEEC — UNICAMP
+
 This course covers neural network architectures applied to Natural Language Processing (NLP), with a focus on modern Large Language Models (LLMs). Topics include text representations (bag-of-words, word embeddings), sequence-to-sequence models, attention mechanisms, and the Transformer architecture. The course also covers pre-training and fine-tuning strategies (e.g., BERT, instruction tuning), efficient training techniques, and post-training inference strategies. Advanced topics include prompt engineering, ReAct (Reasoning + Acting), Retrieval-Augmented Generation (RAG), and the development of agents and multi-agent systems. A distinctive feature of the course is the intensive use of AI-assisted programming tools to accelerate development and experimentation. Implementation is done in Python and PyTorch, and the course concludes with a practical final project integrating all major concepts.
 
 ## Notebooks
@@ -23,3 +27,10 @@ This activity extends the previous language model by incorporating causal maskin
 ### 5 - Language Model with Self-Attention and Causal Masking + LoRA
 
 This activity explores parameter-efficient fine-tuning using LoRA (Low-Rank Adaptation) to adapt a pre-trained language model with reduced computational cost. Instead of updating all model parameters, low-rank decomposition matrices are injected into specific layers, allowing the model to learn task-specific representations while keeping most weights frozen. A custom training loop was implemented to train only the LoRA parameters, significantly reducing memory usage and training time. Experiments demonstrate that LoRA achieves competitive performance compared to full fine-tuning, highlighting its effectiveness for adapting large models under limited resource constraints.
+
+### 6 - CLIP - Multimodal Search via Embedding
+
+
+### 7 - RAG - Retrieval-Augmented Generation
+
+This activity focused on developing a Retrieval-Augmented Generation (RAG) system using the IIRC dataset and the Visconde paper methodology. The pipeline consisted of four main stages: segmentation of context articles into smaller chunks; dense retrieval using sentence-transformer embeddings and a FAISS index for efficient similarity searching; generation of answers via the GPT-4o-mini model using a custom prompt to integrate retrieved contexts; and evaluation using the F1-bag-of-words metric. Results indicated that the system was particularly effective at handling "span" type questions, achieving high precision and solid recall by successfully grounding the LLM's responses in the retrieved text and significantly reducing hallucinations.
