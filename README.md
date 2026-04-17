@@ -30,6 +30,7 @@ This activity explores parameter-efficient fine-tuning using LoRA (Low-Rank Adap
 
 ### 6 - CLIP - Multimodal Search via Embedding
 
+This activity implemented a Multimodal Search system by aligning text and image embeddings from the STL10 dataset into a shared latent space. The architecture utilized frozen pre-trained models—BERT for text and EfficientNet-b0 for images—with added trainable linear layers for fine-tuning. By comparing MSE, Contrastive, and SigLIP loss functions, the results showed that contrastive strategies significantly improved retrieval performance by effectively separating negative pairs. The final system achieved successful text-to-image retrieval, outperforming a standard zero-shot CLIP test in this specific domain.
 
 ### 7 - RAG - Retrieval-Augmented Generation
 
