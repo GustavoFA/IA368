@@ -6,6 +6,36 @@ Institution: FEEC — UNICAMP
 
 This course covers neural network architectures applied to Natural Language Processing (NLP), with a focus on modern Large Language Models (LLMs). Topics include text representations (bag-of-words, word embeddings), sequence-to-sequence models, attention mechanisms, and the Transformer architecture. The course also covers pre-training and fine-tuning strategies (e.g., BERT, instruction tuning), efficient training techniques, and post-training inference strategies. Advanced topics include prompt engineering, ReAct (Reasoning + Acting), Retrieval-Augmented Generation (RAG), and the development of agents and multi-agent systems. A distinctive feature of the course is the intensive use of AI-assisted programming tools to accelerate development and experimentation. Implementation is done in Python and PyTorch, and the course concludes with a practical final project integrating all major concepts.
 
+In this course, I implemented a LoRA-based fine-tuning of the MedGemma-4B model, focusing on efficient adaptation under limited computational resources. The project builds on the MIMIC-CXR-PT-BR dataset for domain-specific learning. For implementation details and experiments, see:
+
+* [MIMIC-CXR-PT-BR](https://github.com/GustavoFA/MIMIC-CXR-PT-BR)
+
+Below is a curated list of the papers studied throughout the course, along with the corresponding notebooks developed during the activities.
+
+## Papers
+
+- [A Neural Probabilistic Language Model (Bengio et al., 2003)](https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf)
+
+- [Attention Is All You Need (Vaswani et al., 2017)](https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf)
+
+- [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding (Devlin et al., 2018)](https://arxiv.org/pdf/1810.04805)
+
+- [Language Models are Unsupervised Multitask Learners (Radford et al., 2019)](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
+
+- [LoRA: Low-Rank Adaptation of Large Language Models (Hu et al., 2021)](https://arxiv.org/pdf/2106.09685)
+
+- [Prefix-Tuning: Optimizing Continuous Prompts for Generation (Li & Liang, 2021)](https://arxiv.org/pdf/2103.00020)
+
+- [Mamba: Linear-Time Sequence Modeling with Selective State Spaces (Gu & Dao, 2023)](https://arxiv.org/pdf/2312.10997)
+
+- [GPT-3: Language Models are Few-Shot Learners (Brown et al., 2020)](https://arxiv.org/abs/2005.14165)
+
+- [Training Language Models to Follow Instructions with Human Feedback (Ouyang et al., 2022)](https://arxiv.org/pdf/2201.11903)
+
+- [InstructGPT / Alignment Paper (Bai et al., 2022)](https://arxiv.org/abs/2210.03629)
+
+- [LLaMA: Open and Efficient Foundation Language Models (Touvron et al., 2023)](https://arxiv.org/pdf/2305.14325)
+
 ## Notebooks
 
 ### 0 - Language Model - Bengio (MLP + Embeddings)
